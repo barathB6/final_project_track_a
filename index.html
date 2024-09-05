@@ -1,0 +1,286 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Hyperspace by HTML5 UP</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+    <!-- Add custom styles here -->
+    <style>
+        /* Custom background for the 'What we do' section */
+        .what-we-do-bg {
+            background-color: #3498db; /* Light blue background */
+            color: white;
+            padding: 2rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+        }
+
+        /* Custom contrasting background for the CS Prep section */
+        .contrast-bg {
+            background-color: #2c3e50; /* Dark blue background */
+            color: white;
+            padding: 2rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+        }
+
+        /* Additional styling for both sections */
+        .what-we-do-bg h2, .contrast-bg h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .what-we-do-bg p, .contrast-bg p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body class="is-preload">
+
+    <!-- Sidebar -->
+    <section id="sidebar">
+        <div class="inner">
+            <nav>
+                <ul>
+                    <li><a href="#intro">Welcome</a></li>
+                    <li><a href="#one">Who we are</a></li>
+                    <li><a href="#two">What we do</a></li>
+                    <li><a href="#cs-prep">CS Prep</a></li>
+                    <li><a href="#sat-prep">SAT Prep</a></li>
+                    <li><a href="#fellowship-experience">Fellowship Experience</a></li>
+                    <li><a href="#three">Get in touch</a></li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Intro -->
+        <section id="intro" class="wrapper style1 fullscreen fade-up">
+            <div class="inner">
+                <h1>Your Ultimate College Prep Portal!</h1>
+                <p>Welcome to our comprehensive platform designed to support you on your journey through college preparation. Whether you're preparing for the SAT or diving into computer science, we offer resources, practice, and guidance to help you succeed. Explore our site to find tools and content tailored to your needs, and let us help you achieve your academic and career goals.</p>
+                <ul class="actions">
+                    <li><a href="#one" class="button scrolly">Learn more</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Who We Are -->
+        <section id="one" class="wrapper style2 spotlights">
+            <section>
+                <a href="#" class="image"><img src="images/pic01.jpg" alt="" data-position="center center" /></a>
+                <div class="content">
+                    <div class="inner">
+                        <h2>Passionate Educators and Innovators</h2>
+                        <p>We are a team of dedicated educators and tech enthusiasts committed to providing high-quality educational resources.</p>
+                        <ul class="actions">
+                            <li><a href="generic.html" class="button">Learn more</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <a href="#" class="image"><img src="images/pic02.jpg" alt="" data-position="top center" /></a>
+                <div class="content">
+                    <div class="inner">
+                        <h2>Empowering Student Success</h2>
+                        <p>Our mission is to empower students with the knowledge and skills they need to excel in their academic pursuits and future careers.</p>
+                        <ul class="actions">
+                            <li><a href="generic.html" class="button">Learn more</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <a href="#" class="image"><img src="images/pic03.jpg" alt="" data-position="25% 25%" /></a>
+                <div class="content">
+                    <div class="inner">
+                        <h2>Diverse Expertise and Support</h2>
+                        <p>With a background in various fields including education, computer science, and test preparation, we strive to create valuable content and tools that support your learning journey.</p>
+                        <ul class="actions">
+                            <li><a href="generic.html" class="button">Learn more</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <!-- What We Do -->
+        <section id="two" class="wrapper style3 fade-up what-we-do-bg">
+            <div class="inner">
+                <h2>What We Do</h2>
+                <p>Our mission is to provide comprehensive educational support to help students thrive. We offer resources in various fields including programming, test preparation, and study tips to ensure you have the tools you need for success.</p>
+                <div class="features">
+                    <section>
+                        <span class="icon solid major fa-code"></span>
+                        <h3>Learn Programming Basics</h3>
+                        <p>We provide clear examples and exercises to help you learn the basics of programming in Python, Java, and C#.</p>
+                    </section>
+                    <section>
+                        <span class="icon solid major fa-lock"></span>
+                        <h3>Test Preparation Resources</h3>
+                        <p>Prepare for the SAT with our targeted practice materials, including reading passages, math problems, and test-taking tips.</p>
+                    </section>
+                    <section>
+                        <span class="icon solid major fa-cog"></span>
+                        <h3>Study Tips and Guidance</h3>
+                        <p>Gain insights into effective study strategies and test-taking techniques to maximize your performance.</p>
+                    </section>
+                </div>
+                <ul class="actions">
+                    <li><a href="generic.html" class="button">Learn more</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- CS Prep -->
+        <section id="cs-prep" class="wrapper style3 contrast-bg fade-up">
+            <div class="inner">
+                <h2>CS Prep</h2>
+                <p>Dive into the fundamentals of computer science with our comprehensive programming resources. Whether you’re starting with Python, Java, or C#, we provide clear examples and exercises to help you build a strong foundation in programming.</p>
+                <div class="language-section">
+                    <h3>Python</h3>
+                    <pre><code>print("Hello, World!")</code></pre>
+                    <pre><code>name = input("Enter your name: ")\nprint("Hello, " + name)</code></pre>
+                    <pre><code>def add(a, b):\n    return a + b</code></pre>
+                </div>
+            </div>
+        </section>
+
+        <!-- SAT Prep -->
+        <section id="sat-prep" class="wrapper style1 fade-up">
+            <div class="inner">
+                <h2>SAT Prep</h2>
+                <div class="reading-section">
+                    <h3>Reading Practice</h3>
+                    <p>Passage goes here...</p>
+                    <p>Question: What is the main idea of the passage?</p>
+                    <form>
+                        <input type="radio" name="q1" value="A"> A. Option A<br>
+                        <input type="radio" name="q1" value="B"> B. Option B<br>
+                        <input type="radio" name="q1" value="C"> C. Option C<br>
+                        <input type="radio" name="q1" value="D"> D. Option D<br>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+
+                <div class="math-section">
+                    <h3>Math Practice</h3>
+                    <p>Solve: 5 + 7 = ?</p>
+                    <form>
+                        <input type="radio" name="q2" value="A"> A. 10<br>
+                        <input type="radio" name="q2" value="B"> B. 11<br>
+                        <input type="radio" name="q2" value="C"> C. 12<br>
+                        <input type="radio" name="q2" value="D"> D. 13<br>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Fellowship Experience -->
+        <section id="fellowship-experience" class="wrapper style2 fade-up">
+            <div class="inner">
+                <h2>Fellowship Experience</h2>
+                <p>Discover how we created our personal portfolio, developed an AI chatbot, and built a flashcard SaaS. Learn about our journey, achievements, and the skills we gained through these projects.</p>
+                <div class="projects">
+                    <h3>Personal Portfolio</h3>
+                    <p>Details about the personal portfolio project.</p>
+                    <h3>AI Chatbot</h3>
+                    <p>Details about the AI chatbot project.</p>
+                    <h3>Flashcard SaaS</h3>
+                    <p>Details about the flashcard SaaS project.</p>
+                </div>
+            </div>
+        </section>
+<h2>Get in touch</h2>
+					<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.</p>
+					<div class="split style1">
+						<section>
+							<form method="post" action="#">
+								<div class="fields">
+									<div class="field half">
+										<label for="name">Name</label>
+										<input type="text" name="name" id="name" />
+									</div>
+									<div class="field half">
+										<label for="email">Email</label>
+										<input type="text" name="email" id="email" />
+									</div>
+									<div class="field">
+										<label for="message">Message</label>
+										<textarea name="message" id="message" rows="5"></textarea>
+									</div>
+								</div>
+								<ul class="actions">
+									<li><a href="" class="button submit">Send Message</a></li>
+								</ul>
+							</form>
+						</section>
+						<section>
+							<ul class="contact">
+								<li>
+									<h3>Contributers</h3>
+									<span>- Barath Balaji<br />
+									- Abdul
+									
+									<br />
+									<span>- Vickram Gill<br />
+									<span>- Sam Tewari<br />
+									<br />
+
+									</span>
+								</li>
+								<li>
+									<h3>Email</h3>
+									<a href="#">user@untitled.tld</a>
+								</li>
+								<li>
+									<h3>Phone</h3>
+									<span>(000) 000-0000</span>
+								</li>
+								<li>
+									<h3>Social</h3>
+									<ul class="icons">
+										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+										<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+										<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+									</ul>
+								</li>
+							</ul>
+						</section>
+					</div>
+				</div>
+			</section>
+
+		</div>
+
+		<!-- Footer -->
+		<footer id="footer" class="wrapper style1-alt">
+			<div class="inner">
+				<ul class="menu">
+					<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+				</ul>
+			</div>
+		</footer>
+
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

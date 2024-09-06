@@ -63,6 +63,10 @@
 
         <!-- Intro -->
         <section id="intro" class="wrapper style1 fullscreen fade-up">
+
+
+
+            
             <div class="inner">
                 <h1>Your Ultimate College Prep Portal!</h1>
                 <p>Welcome to our comprehensive platform designed to support you on your journey through college preparation. Whether you're preparing for the SAT or diving into computer science, we offer resources, practice, and guidance to help you succeed. Explore our site to find tools and content tailored to your needs, and let us help you achieve your academic and career goals.</p>
@@ -75,7 +79,7 @@
         <!-- Who We Are -->
         <section id="one" class="wrapper style2 spotlights">
             <section>
-                <a href="#" class="image"><img src="images/pic01.jpg" alt="" data-position="center center" /></a>
+                <a href="#" class="image"><img src="images/GettyImages-150760431-2.jpg" alt="" data-position="center center" /></a>
                 <div class="content">
                     <div class="inner">
                         <h2>Passionate Educators and Innovators</h2>
@@ -87,7 +91,7 @@
                 </div>
             </section>
             <section>
-                <a href="#" class="image"><img src="images/pic02.jpg" alt="" data-position="top center" /></a>
+                <a href="#" class="image"><img src="images/CollegeAcceptances2023post.jpg" alt="" data-position="top center" /></a>
                 <div class="content">
                     <div class="inner">
                         <h2>Empowering Student Success</h2>
@@ -99,7 +103,7 @@
                 </div>
             </section>
             <section>
-                <a href="#" class="image"><img src="images/pic03.jpg" alt="" data-position="25% 25%" /></a>
+                <a href="#" class="image"><img src="images/i6ft0994acc6ec9djdh9r38olp._SY600_.jpg" alt="" data-position="25% 25%" /></a>
                 <div class="content">
                     <div class="inner">
                         <h2>Diverse Expertise and Support</h2>
@@ -141,18 +145,79 @@
         </section>
 
         <!-- CS Prep -->
-        <section id="cs-prep" class="wrapper style3 contrast-bg fade-up">
-            <div class="inner">
-                <h2>CS Prep</h2>
-                <p>Dive into the fundamentals of computer science with our comprehensive programming resources. Whether you’re starting with Python, Java, or C#, we provide clear examples and exercises to help you build a strong foundation in programming.</p>
-                <div class="language-section">
-                    <h3>Python</h3>
-                    <pre><code>print("Hello, World!")</code></pre>
-                    <pre><code>name = input("Enter your name: ")\nprint("Hello, " + name)</code></pre>
-                    <pre><code>def add(a, b):\n    return a + b</code></pre>
-                </div>
-            </div>
-        </section>
+<section id="cs-prep" class="wrapper style3 contrast-bg fade-up">
+    <div class="inner">
+        <h2>CS Prep</h2>
+        <p>Dive into the fundamentals of computer science with our comprehensive programming resources. Whether you’re starting with Python, Java, or C#, we provide clear examples, exercises, and an interactive editor to practice live coding.</p>
+
+        <!-- Python Section -->
+        <div class="language-section">
+            <h3>Python</h3>
+            <pre><code># Example: Hello, World!
+print("Hello, World!")</code></pre>
+            <pre><code># Exercise: Simple Addition
+def add(a, b):
+    return a + b
+
+# Try calling the function with different values
+print(add(3, 5))  # Expected output: 8</code></pre>
+            <!-- Embed Replit IDE for Python -->
+            <iframe height="500px" width="100%" src="https://replit.com/@barathB6/Python-Example?embed=true"></iframe>
+        </div>
+
+        <!-- C# Section -->
+        <div class="language-section">
+            <h3>C#</h3>
+            <pre><code>// Example: Hello, World!
+using System;
+
+class Program {
+    static void Main() {
+        Console.WriteLine("Hello, World!");
+    }
+}</code></pre>
+            <pre><code>// Exercise: Simple Addition
+using System;
+
+class Program {
+    static int Add(int a, int b) {
+        return a + b;
+    }
+
+    static void Main() {
+        Console.WriteLine(Add(3, 5));  // Expected output: 8
+    }
+}</code></pre>
+            <!-- Embed Replit IDE for C# -->
+            <iframe height="500px" width="100%" src="https://replit.com/@barathB6/CSharp-Example?embed=true"></iframe>
+        </div>
+
+        <!-- Java Section -->
+        <div class="language-section">
+            <h3>Java</h3>
+            <pre><code>// Example: Hello, World!
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}</code></pre>
+            <pre><code>// Exercise: Simple Addition
+public class Main {
+    public static int add(int a, int b) {
+        return a + b;
+    }
+
+    public static void main(String[] args) {
+        System.out.println(add(3, 5));  // Expected output: 8
+    }
+}</code></pre>
+            <!-- Embed Replit IDE for Java -->
+            <iframe height="500px" width="100%" src="https://replit.com/@barathB6/Java-Example?embed=true"></iframe>
+        </div>
+    </div>
+</section>
+
+
 
         <!-- SAT Prep -->
         <section id="sat-prep" class="wrapper style1 fade-up">
@@ -172,36 +237,152 @@
                 </div>
 
                 <div class="math-section">
-                    <h3>Math Practice</h3>
+                    <h3>Math Questions</h3>
                     <p>Solve: 5 + 7 = ?</p>
-                    <form>
-                        <input type="radio" name="q2" value="A"> A. 10<br>
-                        <input type="radio" name="q2" value="B"> B. 11<br>
-                        <input type="radio" name="q2" value="C"> C. 12<br>
-                        <input type="radio" name="q2" value="D"> D. 13<br>
-                        <button type="submit">Submit</button>
+                    <form id="math-quiz-form">
+                        <label><input type="radio" name="q2" value="10"> A. 10</label><br>
+                        <label><input type="radio" name="q2" value="11"> B. 11</label><br>
+                        <label><input type="radio" name="q2" value="12"> C. 12</label><br>
+                        <label><input type="radio" name="q2" value="13"> D. 13</label><br>
+                        <button type="button" onclick="checkMathAnswer()">Submit</button>
                     </form>
+                    <p id="result"></p> 
                 </div>
-            </div>
         </section>
 
-        <!-- Fellowship Experience -->
-        <section id="fellowship-experience" class="wrapper style2 fade-up">
-            <div class="inner">
-                <h2>Fellowship Experience</h2>
-                <p>Discover how we created our personal portfolio, developed an AI chatbot, and built a flashcard SaaS. Learn about our journey, achievements, and the skills we gained through these projects.</p>
-                <div class="projects">
-                    <h3>Personal Portfolio</h3>
-                    <p>Details about the personal portfolio project.</p>
-                    <h3>AI Chatbot</h3>
-                    <p>Details about the AI chatbot project.</p>
-                    <h3>Flashcard SaaS</h3>
-                    <p>Details about the flashcard SaaS project.</p>
+<!-- Fellowship Experience -->
+<section id="fellowship-experience" class="wrapper style2 fade-up">
+    <div class="inner">
+        <h2>Fellowship Experience</h2>
+        <p>Discover how we created our personal portfolio, developed an AI chatbot, built a flashcard SaaS, and designed a pantry tracker. Learn about our journey, achievements, and the skills we gained through these projects.</p>
+        <div class="projects">
+            <!-- Project 1 -->
+            <div class="project">
+                <h3>Personal Website</h3>
+                <p>Details about the personal portfolio project.</p>
+                <div class="skills" style="background-color: #004b6d; padding: 5px; border-radius: 5px; color: #ffffff;">
+                    <h4 style="margin-bottom: 5px;">Skills Used:</h4>
+                    <table style="width: 100%; color: #ffffff; border-collapse: collapse; margin: 0;">
+                        <tr>
+                            <td style="border: 1px solid #ffffff; padding: 5px;">HTML</td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid #ffffff; padding: 5px;">CSS</td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid #ffffff; padding: 5px;">DNS Management</td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid #ffffff; padding: 5px;">Google Analytics</td>
+                        </tr>
+                        <!-- Add more skills as needed -->
+                    </table>
                 </div>
             </div>
-        </section>
+
+            <!-- Project 2 -->
+            <div class="project">
+                <h3>Pantry Tracker</h3>
+                <p>The pantry tracker is a tool designed to help users keep track of their food inventory. With this application, users can log items, set expiration dates, and receive notifications about items that are running low or expiring soon. The tracker aims to reduce food waste and streamline pantry management.</p>
+                <div class="skills" style="background-color: #004b6d; padding: 5px; border-radius: 5px; color: #ffffff;">
+                    <h4 style="margin-bottom: 5px;">Skills Used:</h4>
+                    <table style="width: 100%; color: #ffffff; border-collapse: collapse; margin: 0;">
+                        <tr>
+                            <td style="border: 1px solid #ffffff; padding: 5px;">Next.js</td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid #ffffff; padding: 5px;">React</td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid #ffffff; padding: 5px;">Firebase</td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid #ffffff; padding: 5px;">GCP</td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid #ffffff; padding: 5px;">Vercel Deployment</td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid #ffffff; padding: 5px;">OpenAI API</td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid #ffffff; padding: 5px;">CI/CD</td>
+                        </tr>
+                        <!-- Add more skills as needed -->
+                    </table>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project">
+                <h3>AI Customer Support</h3>
+                <p>Details about the AI chatbot project.</p>
+                <div class="skills" style="background-color: #004b6d; padding: 5px; border-radius: 5px; color: #ffffff;">
+                    <h4 style="margin-bottom: 5px;">Skills Used:</h4>
+                    <table style="width: 100%; color: #ffffff; border-collapse: collapse; margin: 0;">
+                        <tr>
+                            <td style="border: 1px solid #ffffff; padding: 5px;">Next.js</td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid #ffffff; padding: 5px;">React</td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid #ffffff; padding: 5px;">OpenAI API</td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid #ffffff; padding: 5px;">Vercel Deployment</td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid #ffffff; padding: 5px;">Streaming</td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid #ffffff; padding: 5px;">Pinecone</td>
+                        </tr>
+                        <!-- Add more skills as needed -->
+                    </table>
+                </div>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="project">
+                <h3>AI Flashcards & Stripe</h3>
+                <p>Details about the flashcard SaaS project.</p>
+                <div class="skills" style="background-color: #004b6d; padding: 5px; border-radius: 5px; color: #ffffff;">
+                    <h4 style="margin-bottom: 5px;">Skills Used:</h4>
+                    <table style="width: 100%; color: #ffffff; border-collapse: collapse; margin: 0;">
+                        <tr>
+                            <td style="border: 1px solid #ffffff; padding: 5px;">Next.js</td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid #ffffff; padding: 5px;">React</td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid #ffffff; padding: 5px;">Firebase</td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid #ffffff; padding: 5px;">OpenAI API</td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid #ffffff; padding: 5px;">Clerk</td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid #ffffff; padding: 5px;">Stripe</td>
+                        </tr>
+                        <!-- Add more skills as needed -->
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
 <h2>Get in touch</h2>
-					<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.</p>
+					
+                        <p>If you have any questions or need assistance with your college preparation, feel free to reach out to us! We're here to help with SAT prep, computer science resources, and anything else you may need to succeed on your academic journey. Whether you're looking for specific study tips or programming exercises, we're just a message away. Contact us, and we'll get back to you as soon as possible!</p>
+
+                        </p>
 					<div class="split style1">
 						<section>
 							<form method="post" action="#">
@@ -228,32 +409,54 @@
 							<ul class="contact">
 								<li>
 									<h3>Contributers</h3>
-									<span>- Barath Balaji<br />
-									- Abdul
-									
-									<br />
-									<span>- Vickram Gill<br />
+									<span>- Barath Balaji&nbsp;
+                                        <a href="https://www.linkedin.com/in/barath-balaji-54069b271" target="_blank" class="label">
+                                            <i class="fab fa-linkedin-in"></i>&nbsp;&nbsp;
+                                        </a>
+                                        <a href="https://github.com/barathB6?tab=repositories" target="_blank" class="label">
+                                            <i class="fab fa-github"></i>&nbsp;&nbsp;
+                                        </a>
+                                        <a href="https://www.instagram.com/barath_balaji6/" target="_blank" class="label">
+                                            <i class="fab fa-instagram"></i>
+                                        </a>
+
+                                        <br />
+
+
+                                    <span>- Abdul<br />
+                                        
+
+									<span>- Vickram Gill<span>&nbsp;&nbsp;
+                                        <a href="https://www.linkedin.com/in/vickram-gill-b81aa2250/" target="_blank" class="label">
+                                            <i class="fab fa-linkedin-in"></i>&nbsp;&nbsp;
+                                        </a>
+                                        <a href="https://github.com/VickramGill?tab=repositories" target="_blank" class="label">
+                                            <i class="fab fa-github"></i>
+                                        </a>
+                                        <br/>
+                                        
+                                        
 									<span>- Sam Tewari<br />
 									<br />
 
 									</span>
 								</li>
 								<li>
-									<h3>Email</h3>
-									<a href="#">user@untitled.tld</a>
+									<h3>Emails</h3>
+									<a href="#">barathb2306@gmail.com</a>
 								</li>
 								<li>
-									<h3>Phone</h3>
-									<span>(000) 000-0000</span>
+									<h3>Phone #'s</h3>
+									<span>(352) 300-4210
+                                    <br>
+                                    <span>+1 (780)-966-4000</span>
+                        </span>
 								</li>
 								<li>
 									<h3>Social</h3>
 									<ul class="icons">
-										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
 										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-										<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-										<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+                                          
 									</ul>
 								</li>
 							</ul>
@@ -268,7 +471,7 @@
 		<footer id="footer" class="wrapper style1-alt">
 			<div class="inner">
 				<ul class="menu">
-					<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					<li>&copy; Copyright. All rights reserved.</li>
 				</ul>
 			</div>
 		</footer>
@@ -281,6 +484,29 @@
 		<script src="assets/js/breakpoints.min.js"></script>
 		<script src="assets/js/util.js"></script>
 		<script src="assets/js/main.js"></script>
+        <script>
+            function checkMathAnswer() {
+                
+                const correctAnswer = "12";
+        
+                
+                const selectedAnswer = document.querySelector('input[name="q2"]:checked');
+        
+                const resultElement = document.getElementById('result');
+                if (selectedAnswer) {
+                    if (selectedAnswer.value === correctAnswer) {
+                        resultElement.textContent = "Correct!";
+                        resultElement.style.color = "green";
+                    } else {
+                        resultElement.textContent = "Wrong, try again!";
+                        resultElement.style.color = "red";
+                    }
+                } else {
+                    resultElement.textContent = "Please select an answer!";
+                    resultElement.style.color = "orange";
+                }
+            }
+        </script>
 
 	</body>
 </html>

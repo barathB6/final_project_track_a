@@ -1,0 +1,214 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <title>SAT Practice</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <style>
+        /* Styles for SAT Practice Page */
+        .practice-section {
+            padding: 2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .question-block {
+            margin-bottom: 2rem;
+        }
+
+        .question-block h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .answer-options {
+            margin-top: 1rem;
+        }
+
+        .answer-options label {
+            display: flex;
+            align-items: center;
+            margin: 10px 0;
+        }
+
+        /* Styling for the radio button */
+        .answer-options input[type="radio"] {
+            appearance: none;
+            background-color: #fff;
+            margin: 0 10px 0 0;
+            font: inherit;
+            color: #444;
+            width: 1.15em;
+            height: 1.15em;
+            border: 0.15em solid #3498db;
+            border-radius: 50%;
+            display: grid;
+            place-content: center;
+        }
+
+        .answer-options input[type="radio"]::before {
+            content: "";
+            width: 0.65em;
+            height: 0.65em;
+            border-radius: 50%;
+            transition: transform 0.2s ease-in-out;
+            box-shadow: inset 1em 1em #3498db;
+            transform: scale(0);
+        }
+
+        .answer-options input[type="radio"]:checked::before {
+            transform: scale(1);
+        }
+
+        button.submit-practice-btn {
+            background-color: #3498db;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 1rem;
+        }
+
+        button.submit-practice-btn:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+
+    <section id="sat-practice" class="practice-section">
+        <h1>SAT Math and Reading Practice</h1>
+
+        <!-- Math Questions -->
+        <div class="question-block">
+            <h3>Math Question 1:</h3>
+            <p>Solve for x: 2x + 3 = 11</p>
+            <form>
+                <div class="answer-options">
+                    <label><input type="radio" name="math1" value="A"> A. x = 3</label>
+                    <label><input type="radio" name="math1" value="B"> B. x = 4</label>
+                    <label><input type="radio" name="math1" value="C"> C. x = 5</label>
+                    <label><input type="radio" name="math1" value="D"> D. x = 6</label>
+                </div>
+            </form>
+        </div>
+
+        <div class="question-block">
+            <h3>Math Question 2:</h3>
+            <p>If y = 2x + 7 and y = 15, what is the value of x?</p>
+            <form>
+                <div class="answer-options">
+                    <label><input type="radio" name="math2" value="A"> A. x = 4</label>
+                    <label><input type="radio" name="math2" value="B"> B. x = 3</label>
+                    <label><input type="radio" name="math2" value="C"> C. x = 5</label>
+                    <label><input type="radio" name="math2" value="D"> D. x = 6</label>
+                </div>
+            </form>
+        </div>
+
+        <div class="question-block">
+            <h3>Math Question 3:</h3>
+            <p>What is the value of 2^3 + 3^2?</p>
+            <form>
+                <div class="answer-options">
+                    <label><input type="radio" name="math3" value="A"> A. 12</label>
+                    <label><input type="radio" name="math3" value="B"> B. 17</label>
+                    <label><input type="radio" name="math3" value="C"> C. 18</label>
+                    <label><input type="radio" name="math3" value="D"> D. 19</label>
+                </div>
+            </form>
+        </div>
+
+        <!-- Reading Questions -->
+        <div class="question-block">
+            <h3>Reading Question 1:</h3>
+            <p>What is the main theme of the following passage?</p>
+            <blockquote>
+                "In the heart of the forest, the towering trees whispered ancient secrets to those who would listen. Each rustle of leaves spoke of forgotten times and unseen forces."
+            </blockquote>
+            <form>
+                <div class="answer-options">
+                    <label><input type="radio" name="reading1" value="A"> A. The power of nature</label>
+                    <label><input type="radio" name="reading1" value="B"> B. The fragility of life</label>
+                    <label><input type="radio" name="reading1" value="C"> C. Urbanization</label>
+                    <label><input type="radio" name="reading1" value="D"> D. Fear of the unknown</label>
+                </div>
+            </form>
+        </div>
+
+        <div class="question-block">
+            <h3>Reading Question 2:</h3>
+            <p>In the following passage, what does the word "elusive" most likely mean?</p>
+            <blockquote>
+                "Despite his best efforts, the detective found the criminal’s whereabouts elusive, always one step ahead."
+            </blockquote>
+            <form>
+                <div class="answer-options">
+                    <label><input type="radio" name="reading2" value="A"> A. Hidden</label>
+                    <label><input type="radio" name="reading2" value="B"> B. Clever</label>
+                    <label><input type="radio" name="reading2" value="C"> C. Dangerous</label>
+                    <label><input type="radio" name="reading2" value="D"> D. Unpredictable</label>
+                </div>
+            </form>
+        </div>
+
+        <div class="question-block">
+            <h3>Reading Question 3:</h3>
+            <p>What is the author's attitude in the following passage?</p>
+            <blockquote>
+                "The politician's speech was filled with empty promises, leaving the audience skeptical and uninterested."
+            </blockquote>
+            <form>
+                <div class="answer-options">
+                    <label><input type="radio" name="reading3" value="A"> A. Optimistic</label>
+                    <label><input type="radio" name="reading3" value="B"> B. Indifferent</label>
+                    <label><input type="radio" name="reading3" value="C"> C. Critical</label>
+                    <label><input type="radio" name="reading3" value="D"> D. Sympathetic</label>
+                </div>
+            </form>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="button" class="submit-practice-btn" onclick="checkAnswers()">Submit Answers</button>
+
+    </section>
+
+    <script>
+        // Correct answers
+        const correctAnswers = {
+            math1: 'B',  // Math Question 1: x = 4
+            math2: 'A',  // Math Question 2: x = 4
+            math3: 'B',  // Math Question 3: 17
+            reading1: 'A',  // Reading Question 1: The power of nature
+            reading2: 'A',  // Reading Question 2: Hidden
+            reading3: 'C'   // Reading Question 3: Critical
+        };
+
+        // Function to check answers
+        function checkAnswers() {
+            let score = 0;
+            let total = 6; // Total number of questions
+
+            const userAnswers = {
+                math1: document.querySelector('input[name="math1"]:checked'),
+                math2: document.querySelector('input[name="math2"]:checked'),
+                math3: document.querySelector('input[name="math3"]:checked'),
+                reading1: document.querySelector('input[name="reading1"]:checked'),
+                reading2: document.querySelector('input[name="reading2"]:checked'),
+                reading3: document.querySelector('input[name="reading3"]:checked')
+            };
+
+            // Check each answer
+            for (const question in userAnswers) {
+                if (userAnswers[question] && userAnswers[question].value === correctAnswers[question]) {
+                    score++;
+                }
+            }
+
+            alert(`You got ${score} out of ${total} correct.`);
+        }
+    </script>
+</body>
+</html>
